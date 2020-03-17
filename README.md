@@ -1,7 +1,6 @@
 # Sudoku Saga
 
-A Data Extraction Web App that converts Images to Tables. <br>
-The Exported Table could be downloaded in xlsx or csv format.
+A Sudoku Solver Web App
 
 ## Demo
 ![Demo Image](/static/img/gitimage.png)
