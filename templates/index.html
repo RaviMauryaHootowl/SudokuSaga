@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sudoku Solver</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+</head>
+
+<body>
+    <main>
+        <div class="header-container">
+            <span class="header-title-primary">Sudoku</span>
+            <span class="header-title-secondary">Saga</span>
+        </div>
+
+        <div class="sudoku-container">
+            <span class="header-subtitle">Fill your sudoku problem</span>
+            <!-- Put table here -->
+            <table class="sudoku-table" id="sudoku-table">
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb tdr"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb tdr"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb tdr"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb tdr"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                    <td contenteditable="true" class="tdb"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+                <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true" class="tdr"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                </tr>
+
+
+            </table>
+        </div>
+
+        <div class="btn-container">
+            <button class="solve-btn" id="solve-btn">Solve</button>
+            <button class="clear-btn" id="clear-btn">Clear</button>
+        </div>
+        <span id="error-label" class="error-label">This Sudoku is Impossible!</span>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='js/scr.js')}}"></script>
+</body>
+
+</html>
